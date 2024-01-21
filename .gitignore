@@ -11,3 +11,5 @@ Untitled-*.ipynb
 
 config.yml
 config.yaml
+
+chromadb/*

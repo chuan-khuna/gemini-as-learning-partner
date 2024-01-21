@@ -46,7 +46,7 @@ class ChromaClient:
                 pass
 
         collection = self.client.get_or_create_collection(
-            name=self.collection_name, embedding_func=GeminiEmbeddingFunc()
+            name=self.collection_name, embedding_function=GeminiEmbeddingFunc()
         )
 
         return collection

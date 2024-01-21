@@ -23,7 +23,6 @@ class GeminiClient:
             print(f"Generating Gemini Content for <{prompt}>")
         try:
             response = self.model.generate_content(prompt)
-            response.text
             return Just(to_markdown(response.text))
         except Exception as e:
             return Nothing(f"Gemini Error: {e.__class__.__name__} {e}")
